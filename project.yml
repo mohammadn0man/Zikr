@@ -7,8 +7,16 @@ targets:
     type: application
     platform: watchOS
     sources: Zikr Watch App
+    dependencies:
+      - target: ZikrWidget
+        embed: true
+        codeSign: true
+    info:
+      path: Zikr Watch App/Info.plist
     settings:
       base:
+        MARKETING_VERSION: 1.0
+        CURRENT_PROJECT_VERSION: 1
         GENERATE_INFOPLIST_FILE: YES
         INFOPLIST_KEY_WKWatchOnly: YES
         INFOPLIST_KEY_WKSupportsAlwaysOnDisplay: YES
@@ -18,6 +26,26 @@ targets:
         INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
         SWIFT_VERSION: 5.0
         DEVELOPMENT_TEAM: ""
+        CODE_SIGN_ENTITLEMENTS: Zikr Watch App/Zikr Watch App.entitlements
+
+  ZikrWidget:
+    type: app-extension
+    platform: watchOS
+    sources: ZikrWidget
+    info:
+      path: ZikrWidget/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
+    settings:
+      base:
+        MARKETING_VERSION: 1.0
+        CURRENT_PROJECT_VERSION: 1
+        PRODUCT_BUNDLE_IDENTIFIER: com.mohammadnoman.ZikrWatchApp.ZikrWidget
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_VERSION: 5.0
+        DEVELOPMENT_TEAM: ""
+        CODE_SIGN_ENTITLEMENTS: ZikrWidget/ZikrWidget.entitlements
 
   Zikr Watch AppTests:
     type: bundle.unit-test

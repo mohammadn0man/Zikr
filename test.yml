@@ -1,0 +1,10 @@
+name: Zikr
+targets:
+  ZikrWidget:
+    type: app-extension
+    platform: watchOS
+    info:
+      path: ZikrWidget/Info.plist
+      properties:
+        NSExtension:
+          NSExtensionPointIdentifier: com.apple.widgetkit-extension
