@@ -58,8 +58,9 @@
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2"
       queueDebuggingEnableBacktraceRecording = "Yes">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.Carousel">
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "1449BD4B1F4B1C56E191EDE5"
@@ -67,7 +68,7 @@
             BlueprintName = "ZikrWidget"
             ReferencedContainer = "container:Zikr.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </RemoteRunnable>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
