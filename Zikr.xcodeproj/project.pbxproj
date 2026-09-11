@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		345D99AD545BBF90B33BD93D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 372A98C8F6E6826C7BAC2A6D /* Assets.xcassets */; };
 		42B905ED0A7C3AC43DDE5CC2 /* Zikr_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC14F8166F7E7316180B9 /* Zikr_Watch_AppTests.swift */; };
 		70C0C01F5EEDA15065AE68F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E125670ECD8118B235A92 /* ContentView.swift */; };
 		7C25AFB8C44FF508CA5DCD16 /* Zikr_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB5F215B9F1B9953C1A496 /* Zikr_Watch_AppUITests.swift */; };
@@ -32,6 +33,7 @@
 
 /* Begin PBXFileReference section */
 		25FB5F215B9F1B9953C1A496 /* Zikr_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		372A98C8F6E6826C7BAC2A6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E29B432FACE77111C9AD590 /* Zikr Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zikr Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C1E125670ECD8118B235A92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		72A8F69AC6AE8FE3A7D1F5B0 /* Zikr Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikr Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +82,7 @@
 		739D48D3EC15118ADC0CCB48 /* Zikr Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				372A98C8F6E6826C7BAC2A6D /* Assets.xcassets */,
 				E4BBD6D9FB720BFA19CBEFA6 /* ZikrApp.swift */,
 				D87A99628975AD6C0444B19A /* Views */,
 			);
@@ -138,6 +141,7 @@
 			buildConfigurationList = C2DA1065BEA3B99C1EE929C3 /* Build configuration list for PBXNativeTarget "Zikr Watch App" */;
 			buildPhases = (
 				10EE57BE59A98D6B0C562BE7 /* Sources */,
+				58D8E544E726F964C03E6469 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -187,6 +191,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58D8E544E726F964C03E6469 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				345D99AD545BBF90B33BD93D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		10EE57BE59A98D6B0C562BE7 /* Sources */ = {
