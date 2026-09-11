@@ -6,31 +6,39 @@ struct OnboardingTipView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 16) {
+            VStack(spacing: 12) {
                 Image(systemName: "hand.tap.fill")
-                    .font(.system(size: 40))
+                    .font(.system(size: 36))
                     .foregroundStyle(.green)
                 
                 Text("Welcome to Zikr")
                     .font(.headline)
                 
-                if isDoubleTapSupported {
-                    Text("Tap your thumb and index finger together twice to count — no need to look at your watch.")
+                // Input methods
+                VStack(alignment: .leading, spacing: 8) {
+                    Label("Tap the button to count", systemImage: "hand.point.up.fill")
                         .font(.caption)
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(.secondary)
                     
-                    Text("You can also tap the button on screen.")
-                        .font(.caption2)
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(.tertiary)
-                } else {
-                    Text("Tap the button on screen to count your dhikr.")
+                    Label("Rotate the Crown to count", systemImage: "digitalcrown.horizontal.arrow.counterclockwise.fill")
                         .font(.caption)
-                        .multilineTextAlignment(.center)
-                        .foregroundStyle(.secondary)
                     
-                    Text("Double Tap gesture requires Apple Watch Series 9 or Ultra 2 and later with watchOS 11+.")
+                    if isDoubleTapSupported {
+                        Label("Double Tap gesture to count", systemImage: "hand.tap.fill")
+                            .font(.caption)
+                    }
+                }
+                .foregroundStyle(.secondary)
+                
+                // Wrist detection tip
+                Divider()
+                
+                Text("💡 Using handheld? If your watch locks when removed from your wrist, go to Settings → Passcode → Wrist Detection on your watch to adjust.")
+                    .font(.caption2)
+                    .multilineTextAlignment(.center)
+                    .foregroundStyle(.tertiary)
+                
+                if !isDoubleTapSupported {
+                    Text("Double Tap requires Series 9 / Ultra 2+ with watchOS 11+.")
                         .font(.caption2)
                         .multilineTextAlignment(.center)
                         .foregroundStyle(.tertiary)
@@ -41,6 +49,7 @@ struct OnboardingTipView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.green)
+                .padding(.top, 4)
             }
             .padding()
         }

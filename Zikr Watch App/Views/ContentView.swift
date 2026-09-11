@@ -5,6 +5,11 @@ class SessionManager: NSObject, ObservableObject, WKExtendedRuntimeSessionDelega
     var session: WKExtendedRuntimeSession?
     
     func startSession() {
+        // Prevent starting background sessions in Xcode Previews to avoid timeouts
+        if ProcessInfo.processInfo.environment["XCODE_RUNNING_FOR_PLAYGROUNDS"] == "1" {
+            return
+        }
+        
         if session == nil {
             session = WKExtendedRuntimeSession()
             session?.delegate = self
