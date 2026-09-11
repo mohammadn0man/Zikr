@@ -1,0 +1,38 @@
+name: Zikr
+options:
+  bundleIdPrefix: com.mohammadnoman
+  minimumwatchOSVersion: 10.0
+targets:
+  Zikr Watch App:
+    type: watch.app
+    platform: watchOS
+    sources: Zikr Watch App
+    settings:
+      base:
+        INFOPLIST_KEY_WKCompanionAppBundleIdentifier: ""
+        INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp: YES
+        INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+        INFOPLIST_KEY_UIApplicationSupportsMultipleScenes: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait
+        SWIFT_VERSION: 5.0
+        DEVELOPMENT_TEAM: ""
+
+  Zikr Watch AppTests:
+    type: bundle.unit-test
+    platform: watchOS
+    sources: Zikr Watch AppTests
+    dependencies:
+      - target: Zikr Watch App
+    settings:
+      base:
+        SWIFT_VERSION: 5.0
+
+  Zikr Watch AppUITests:
+    type: bundle.ui-test
+    platform: watchOS
+    sources: Zikr Watch AppUITests
+    dependencies:
+      - target: Zikr Watch App
+    settings:
+      base:
+        SWIFT_VERSION: 5.0
