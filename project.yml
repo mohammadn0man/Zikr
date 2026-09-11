@@ -4,7 +4,7 @@ options:
   minimumwatchOSVersion: 10.0
 targets:
   Zikr Watch App:
-    type: watch.app
+    type: application
     platform: watchOS
     sources: Zikr Watch App
     settings:
@@ -28,7 +28,7 @@ targets:
         SWIFT_VERSION: 5.0
 
   Zikr Watch AppUITests:
-    type: bundle.ui-test
+    type: bundle.ui-testing
     platform: watchOS
     sources: Zikr Watch AppUITests
     dependencies:

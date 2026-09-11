@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42B905ED0A7C3AC43DDE5CC2 /* Zikr_Watch_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79DDC14F8166F7E7316180B9 /* Zikr_Watch_AppTests.swift */; };
+		70C0C01F5EEDA15065AE68F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C1E125670ECD8118B235A92 /* ContentView.swift */; };
+		7C25AFB8C44FF508CA5DCD16 /* Zikr_Watch_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25FB5F215B9F1B9953C1A496 /* Zikr_Watch_AppUITests.swift */; };
+		D7B54C7B68218EED1B389B2F /* ZikrApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4BBD6D9FB720BFA19CBEFA6 /* ZikrApp.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69D50C23F1532D712AA9C996 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DBE9A79658B75EB894213DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C426DAB514B9CCA1285141;
+			remoteInfo = "Zikr Watch App";
+		};
+		8AA5E6C0E2EE540AE492B228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DBE9A79658B75EB894213DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4C426DAB514B9CCA1285141;
+			remoteInfo = "Zikr Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25FB5F215B9F1B9953C1A496 /* Zikr_Watch_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_Watch_AppUITests.swift; sourceTree = "<group>"; };
+		5E29B432FACE77111C9AD590 /* Zikr Watch AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zikr Watch AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C1E125670ECD8118B235A92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		72A8F69AC6AE8FE3A7D1F5B0 /* Zikr Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zikr Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79DDC14F8166F7E7316180B9 /* Zikr_Watch_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zikr_Watch_AppTests.swift; sourceTree = "<group>"; };
+		7D43A35C74A812930D5D1F29 /* Zikr Watch AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Zikr Watch AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4BBD6D9FB720BFA19CBEFA6 /* ZikrApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZikrApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		12E06073CCE155035DD1D52E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				72A8F69AC6AE8FE3A7D1F5B0 /* Zikr Watch App.app */,
+				7D43A35C74A812930D5D1F29 /* Zikr Watch AppTests.xctest */,
+				5E29B432FACE77111C9AD590 /* Zikr Watch AppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		140189144E89C9EF545D7593 /* Zikr Watch AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25FB5F215B9F1B9953C1A496 /* Zikr_Watch_AppUITests.swift */,
+			);
+			path = "Zikr Watch AppUITests";
+			sourceTree = "<group>";
+		};
+		47ADE41BD035F8C3705B19B5 = {
+			isa = PBXGroup;
+			children = (
+				739D48D3EC15118ADC0CCB48 /* Zikr Watch App */,
+				47B7D799A2FA57194BB8E9C6 /* Zikr Watch AppTests */,
+				140189144E89C9EF545D7593 /* Zikr Watch AppUITests */,
+				12E06073CCE155035DD1D52E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		47B7D799A2FA57194BB8E9C6 /* Zikr Watch AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				79DDC14F8166F7E7316180B9 /* Zikr_Watch_AppTests.swift */,
+			);
+			path = "Zikr Watch AppTests";
+			sourceTree = "<group>";
+		};
+		739D48D3EC15118ADC0CCB48 /* Zikr Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				E4BBD6D9FB720BFA19CBEFA6 /* ZikrApp.swift */,
+				D87A99628975AD6C0444B19A /* Views */,
+			);
+			path = "Zikr Watch App";
+			sourceTree = "<group>";
+		};
+		D87A99628975AD6C0444B19A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6C1E125670ECD8118B235A92 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58E0BD4AA4054EE168F1F76D /* Zikr Watch AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7028398C456D1C8CE733BC4 /* Build configuration list for PBXNativeTarget "Zikr Watch AppUITests" */;
+			buildPhases = (
+				8625CFF28020EF071F32E8B2 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72A5526FEEA3D4BC98FD0AB8 /* PBXTargetDependency */,
+			);
+			name = "Zikr Watch AppUITests";
+			packageProductDependencies = (
+			);
+			productName = "Zikr Watch AppUITests";
+			productReference = 5E29B432FACE77111C9AD590 /* Zikr Watch AppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		A68A3F8CE0C33FE9C3DF6738 /* Zikr Watch AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54CB0FDDB6CEBEA8FB4D7DAD /* Build configuration list for PBXNativeTarget "Zikr Watch AppTests" */;
+			buildPhases = (
+				B9A070553479631ED94556CB /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				307E80B41ABBC644547DC06B /* PBXTargetDependency */,
+			);
+			name = "Zikr Watch AppTests";
+			packageProductDependencies = (
+			);
+			productName = "Zikr Watch AppTests";
+			productReference = 7D43A35C74A812930D5D1F29 /* Zikr Watch AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D4C426DAB514B9CCA1285141 /* Zikr Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2DA1065BEA3B99C1EE929C3 /* Build configuration list for PBXNativeTarget "Zikr Watch App" */;
+			buildPhases = (
+				10EE57BE59A98D6B0C562BE7 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Zikr Watch App";
+			packageProductDependencies = (
+			);
+			productName = "Zikr Watch App";
+			productReference = 72A8F69AC6AE8FE3A7D1F5B0 /* Zikr Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DBE9A79658B75EB894213DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					58E0BD4AA4054EE168F1F76D = {
+						TestTargetID = D4C426DAB514B9CCA1285141;
+					};
+					D4C426DAB514B9CCA1285141 = {
+						DevelopmentTeam = "";
+					};
+				};
+			};
+			buildConfigurationList = 2AB49ED2CC6BA8EBA9C858DF /* Build configuration list for PBXProject "Zikr" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 47ADE41BD035F8C3705B19B5;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 12E06073CCE155035DD1D52E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4C426DAB514B9CCA1285141 /* Zikr Watch App */,
+				A68A3F8CE0C33FE9C3DF6738 /* Zikr Watch AppTests */,
+				58E0BD4AA4054EE168F1F76D /* Zikr Watch AppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10EE57BE59A98D6B0C562BE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70C0C01F5EEDA15065AE68F4 /* ContentView.swift in Sources */,
+				D7B54C7B68218EED1B389B2F /* ZikrApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8625CFF28020EF071F32E8B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C25AFB8C44FF508CA5DCD16 /* Zikr_Watch_AppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9A070553479631ED94556CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42B905ED0A7C3AC43DDE5CC2 /* Zikr_Watch_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		307E80B41ABBC644547DC06B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4C426DAB514B9CCA1285141 /* Zikr Watch App */;
+			targetProxy = 8AA5E6C0E2EE540AE492B228 /* PBXContainerItemProxy */;
+		};
+		72A5526FEEA3D4BC98FD0AB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4C426DAB514B9CCA1285141 /* Zikr Watch App */;
+			targetProxy = 69D50C23F1532D712AA9C996 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		008AF325C2FEEC3CFF91A21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchAppUITests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Zikr Watch App";
+			};
+			name = Debug;
+		};
+		1B9AB79C5BE529F89FEDF781 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsMultipleScenes = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchApp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Debug;
+		};
+		234FC3531998D4075B7C75DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsMultipleScenes = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchApp;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+			};
+			name = Release;
+		};
+		29AC995CBA67A591D5EA71AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchAppTests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zikr Watch App.app/Zikr Watch App";
+			};
+			name = Release;
+		};
+		9EBC83425425FFD7F8F82976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchAppTests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zikr Watch App.app/Zikr Watch App";
+			};
+			name = Debug;
+		};
+		CE7056A4EF4DA418FC7F9F86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D8BFB909C5C26EFA7EAA047C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchAppUITests;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "Zikr Watch App";
+			};
+			name = Release;
+		};
+		EE29DF31592283DE08BEDEDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AB49ED2CC6BA8EBA9C858DF /* Build configuration list for PBXProject "Zikr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE29DF31592283DE08BEDEDA /* Debug */,
+				CE7056A4EF4DA418FC7F9F86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		54CB0FDDB6CEBEA8FB4D7DAD /* Build configuration list for PBXNativeTarget "Zikr Watch AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EBC83425425FFD7F8F82976 /* Debug */,
+				29AC995CBA67A591D5EA71AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A7028398C456D1C8CE733BC4 /* Build configuration list for PBXNativeTarget "Zikr Watch AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				008AF325C2FEEC3CFF91A21E /* Debug */,
+				D8BFB909C5C26EFA7EAA047C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C2DA1065BEA3B99C1EE929C3 /* Build configuration list for PBXNativeTarget "Zikr Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B9AB79C5BE529F89FEDF781 /* Debug */,
+				234FC3531998D4075B7C75DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DBE9A79658B75EB894213DB /* Project object */;
+}
