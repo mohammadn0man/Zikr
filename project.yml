@@ -1,7 +1,7 @@
 name: Zikr
 options:
   bundleIdPrefix: com.mohammadnoman
-  minimumwatchOSVersion: 10.0
+  minimumwatchOSVersion: 11.0
 targets:
   Zikr Watch App:
     type: application

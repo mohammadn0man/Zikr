@@ -27,45 +27,46 @@ class SessionManager: NSObject, ObservableObject, WKExtendedRuntimeSessionDelega
 }
 
 struct ContentView: View {
-    @AppStorage("zikrCount") private var count = 0
+    @StateObject private var counter = ZikrCounter()
     @StateObject private var sessionManager = SessionManager()
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    @State private var showResetConfirmation = false
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Spacer()
-                
-                Text("\(count)")
-                    .font(.system(size: 60, weight: .bold))
-                
-                Spacer()
-                
-                Button(action: {
-                    count += 1
-                    WKInterfaceDevice.current().play(.click) // Added haptic feedback
-                }) {
-                    Text("Tap")
-                        .font(.title3.bold())
-                        .frame(maxWidth: .infinity, minHeight: 60)
-                }
-                .buttonStyle(.borderedProminent)
-                .tint(.green)
-                .handGestureShortcut(.primaryAction)
-            }
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: {
-                        count = 0
-                    }) {
-                        Image(systemName: "arrow.counterclockwise")
-                            .font(.body.bold())
-                            .foregroundColor(.red)
+            CounterView(counter: counter)
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(action: {
+                            showResetConfirmation = true
+                        }) {
+                            Image(systemName: "arrow.counterclockwise")
+                                .font(.body.bold())
+                                .foregroundColor(.red)
+                        }
                     }
                 }
+        }
+        .confirmationDialog(
+            "Reset Counter?",
+            isPresented: $showResetConfirmation,
+            titleVisibility: .visible
+        ) {
+            Button("Reset to 0", role: .destructive) {
+                counter.reset()
             }
-            .onAppear {
-                sessionManager.startSession()
-            }
+            Button("Cancel", role: .cancel) { }
+        } message: {
+            Text("Your count of \(counter.count) will be lost.")
+        }
+        .sheet(isPresented: Binding(
+            get: { !hasSeenOnboarding },
+            set: { if !$0 { hasSeenOnboarding = true } }
+        )) {
+            OnboardingTipView(isDoubleTapSupported: DoubleTapDetector.isSupported)
+        }
+        .onAppear {
+            sessionManager.startSession()
         }
     }
 }
