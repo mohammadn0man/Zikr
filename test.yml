@@ -1,0 +1,5 @@
+name: Test
+targets:
+  TestApp:
+    type: application.watchapp2
+    platform: watchOS
