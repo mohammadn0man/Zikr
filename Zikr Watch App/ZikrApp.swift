@@ -1,7 +1,14 @@
 import SwiftUI
+import WidgetKit
 
 @main
 struct Zikr_Watch_AppApp: App {
+    
+    init() {
+        if #available(watchOS 10.0, *) {
+            ZikrRelevanceManager.updateRelevance()
+        }
+    }
     
     var body: some Scene {
         WindowGroup {

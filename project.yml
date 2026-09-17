@@ -6,7 +6,9 @@ targets:
   Zikr Watch App:
     type: application
     platform: watchOS
-    sources: Zikr Watch App
+    sources:
+      - Zikr Watch App
+      - path: ZikrWidget/ZikrWidgetIntent.swift
     dependencies:
       - target: ZikrWidget
         embed: true

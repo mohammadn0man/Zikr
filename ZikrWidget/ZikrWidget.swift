@@ -5,10 +5,11 @@ import SwiftUI
 struct ZikrEntry: TimelineEntry {
     let date: Date
     let count: Int
+    let relevance: TimelineEntryRelevance?
 }
 
 // MARK: - Timeline Provider
-struct ZikrTimelineProvider: TimelineProvider {
+struct ZikrTimelineProvider: AppIntentTimelineProvider {
     private let appGroupID = "group.com.mohammadnoman.zikr"
     private let countKey = "zikrCount"
     
@@ -17,18 +18,31 @@ struct ZikrTimelineProvider: TimelineProvider {
     }
     
     func placeholder(in context: Context) -> ZikrEntry {
-        ZikrEntry(date: .now, count: 33)
+        ZikrEntry(date: .now, count: 33, relevance: nil)
     }
     
-    func getSnapshot(in context: Context, completion: @escaping (ZikrEntry) -> Void) {
-        completion(ZikrEntry(date: .now, count: currentCount()))
+    func snapshot(for configuration: ZikrWidgetIntent,
+                  in context: Context) async -> ZikrEntry {
+        ZikrEntry(date: .now, count: currentCount(), relevance: nil)
     }
     
-    func getTimeline(in context: Context, completion: @escaping (Timeline<ZikrEntry>) -> Void) {
-        let entry = ZikrEntry(date: .now, count: currentCount())
+    func timeline(for configuration: ZikrWidgetIntent,
+                  in context: Context) async -> Timeline<ZikrEntry> {
+        let count = currentCount()
+        
+        // "Now" entry with moderate relevance (30 min duration)
+        let now = ZikrEntry(
+            date: .now,
+            count: count,
+            relevance: TimelineEntryRelevance(score: 0.5, duration: 1800)
+        )
+        
         // .never policy — we manually trigger reloads from the main app
-        let timeline = Timeline(entries: [entry], policy: .never)
-        completion(timeline)
+        return Timeline(entries: [now], policy: .never)
+    }
+    
+    func recommendations() -> [AppIntentRecommendation<ZikrWidgetIntent>] {
+        [AppIntentRecommendation(intent: ZikrWidgetIntent(), description: "Zikr Counter")]
     }
 }
 
@@ -37,7 +51,11 @@ struct ZikrWidget: Widget {
     let kind = "ZikrWidget"
     
     var body: some WidgetConfiguration {
-        StaticConfiguration(kind: kind, provider: ZikrTimelineProvider()) { entry in
+        AppIntentConfiguration(
+            kind: kind,
+            intent: ZikrWidgetIntent.self,
+            provider: ZikrTimelineProvider()
+        ) { entry in
             ZikrWidgetView(entry: entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }

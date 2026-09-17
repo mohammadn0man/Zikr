@@ -18,7 +18,6 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "1449BD4B1F4B1C56E191EDE5"
                BuildableName = "ZikrWidget.appex"
-               BlueprintName = "ZikrWidget"
                ReferencedContainer = "container:Zikr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,7 +31,6 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D4C426DAB514B9CCA1285141"
                BuildableName = "Zikr Watch App.app"
-               BlueprintName = "Zikr Watch App"
                ReferencedContainer = "container:Zikr.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,6 +42,26 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "58E0BD4AA4054EE168F1F76D"
+               BuildableName = "Zikr Watch AppUITests.xctest"
+               ReferencedContainer = "container:Zikr.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A68A3F8CE0C33FE9C3DF6738"
+               BuildableName = "Zikr Watch AppTests.xctest"
+               ReferencedContainer = "container:Zikr.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -57,7 +75,8 @@
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES"
       launchAutomaticallySubstyle = "2"
-      queueDebuggingEnableBacktraceRecording = "Yes">
+      queueDebuggingEnableBacktraceRecording = "Yes"
+      queueDebuggingEnabled = "No">
       <BuildableProductRunnable
          runnableDebuggingMode = "0">
          <BuildableReference
@@ -72,7 +91,6 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D4C426DAB514B9CCA1285141"
             BuildableName = "Zikr Watch App.app"
-            BlueprintName = "Zikr Watch App"
             ReferencedContainer = "container:Zikr.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
