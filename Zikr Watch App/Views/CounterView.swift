@@ -37,13 +37,13 @@ struct CounterView: View {
             $crownAccumulator,
             from: -1000000.0,
             through: 1000000.0,
-            by: 2.5, // Syncs system detent haptic with our threshold
+            by: 2, // Syncs system detent haptic with our threshold
             sensitivity: .low, // Requires deliberate physical turn
             isContinuous: false,
             isHapticFeedbackEnabled: true
         )
         .onChange(of: crownAccumulator) { _, newValue in
-            let threshold = 2.5
+            let threshold = 2.0 // Must match the 'by' parameter above
             let delta = newValue - lastProcessedCrown
             
             if abs(delta) >= threshold {
