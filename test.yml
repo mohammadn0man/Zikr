@@ -1,10 +1,5 @@
-name: Zikr
+name: Test
 targets:
-  ZikrWidget:
-    type: app-extension
+  TestApp:
+    type: application.watchapp2
     platform: watchOS
-    info:
-      path: ZikrWidget/Info.plist
-      properties:
-        NSExtension:
-          NSExtensionPointIdentifier: com.apple.widgetkit-extension
