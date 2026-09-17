@@ -10,7 +10,7 @@ struct ZikrEntry: TimelineEntry {
 
 // MARK: - Timeline Provider
 struct ZikrTimelineProvider: AppIntentTimelineProvider {
-    private let appGroupID = "group.com.mohammadnoman.zikr"
+    private let appGroupID = "group.mohammadn0man.zikrcounter.data"
     private let countKey = "zikrCount"
     
     private func currentCount() -> Int {

@@ -4,7 +4,7 @@ import WidgetKit
 
 @MainActor
 class ZikrCounter: ObservableObject {
-    static let appGroupID = "group.com.mohammadnoman.zikr"
+    static let appGroupID = "group.mohammadn0man.zikrcounter.data"
     static let countKey = "zikrCount"
     
     @Published var count: Int {

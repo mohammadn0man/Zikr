@@ -384,7 +384,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				TEST_TARGET_NAME = "Zikr Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Debug;
 		};
@@ -396,7 +395,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3LHJ4A9F42;
+				DEVELOPMENT_TEAM = L8SBQ2K5W8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zikr Watch App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -406,13 +405,12 @@
 				INFOPLIST_KEY_WKSupportsAlwaysOnDisplay = YES;
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadn0man.zikrcounter;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Debug;
 		};
@@ -424,7 +422,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3LHJ4A9F42;
+				DEVELOPMENT_TEAM = L8SBQ2K5W8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Zikr Watch App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -434,13 +432,12 @@
 				INFOPLIST_KEY_WKSupportsAlwaysOnDisplay = YES;
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadn0man.zikrcounter;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Release;
 		};
@@ -460,7 +457,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zikr Watch App.app/Zikr Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Release;
 		};
@@ -468,8 +464,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZikrWidget/ZikrWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3LHJ4A9F42;
+				DEVELOPMENT_TEAM = L8SBQ2K5W8;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ZikrWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,12 +476,12 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchApp.ZikrWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadn0man.zikrcounter.ZikrWidget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Debug;
 		};
@@ -503,7 +501,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zikr Watch App.app/Zikr Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Debug;
 		};
@@ -578,7 +575,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				TEST_TARGET_NAME = "Zikr Watch App";
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Release;
 		};
@@ -586,8 +582,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ZikrWidget/ZikrWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 3LHJ4A9F42;
+				DEVELOPMENT_TEAM = L8SBQ2K5W8;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = ZikrWidget/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,12 +594,12 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadnoman.ZikrWatchApp.ZikrWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mohammadn0man.zikrcounter.ZikrWidget;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Release;
 		};
